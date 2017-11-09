@@ -36,6 +36,8 @@ public class AthleteSummary: StravaObject {
     var updatedAt: Date?
     
     override public func mapping(map: Map) {
+        super.mapping(map: map)
+        
         firstName <- map["firstname"]
         lastName <- map["lastname"]
         profileMedium <- map["profile_medium"]
