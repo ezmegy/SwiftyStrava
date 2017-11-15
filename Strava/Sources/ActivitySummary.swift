@@ -63,8 +63,8 @@ public class ActivitySummary: StravaObject {
     var elevationHigh: Float = 0 // Meters
     var elevationLow: Float = 0 // Meters
     var type: ActivityType = .ride
-    var startDate: Date?
-    var startDateLocal: Date?
+    var startDate: String?
+    var startDateLocal: String?
     var timeZone: String?
     var startCoordinate: GeoCoordinate?
     var endCoordinate: GeoCoordinate?
