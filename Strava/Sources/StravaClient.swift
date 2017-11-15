@@ -165,6 +165,17 @@ public extension StravaClient {
             completion(deauthResponse)
         }
     }
+    
+    /// Set the previously stored `accessToken`
+    ///
+    /// Strava tokens don't expire -> Only the firs run of the app has to start with an auth flow
+    /// If we store the token, it can be re-used ever after (until the user revokes access of our app)
+    ///
+    /// - Parameter: previously stored token (i.e. on KeyChain)
+    public func setAuthToken(_ token: String!) {
+        self.authToken = token
+    }
+    
 }
 
 
