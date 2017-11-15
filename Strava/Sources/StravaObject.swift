@@ -10,7 +10,7 @@ import AlamofireObjectMapper
 import ObjectMapper
 
 public class StravaObject: Mappable {
-    var id: Int64?
+    var id: Int?
     var resourceState: Int?
     
     required public init?(map: Map){}
